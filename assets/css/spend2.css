@@ -1,0 +1,182 @@
+﻿.data_area {
+	width: 920px;
+	height: 320px;
+	top: 10;
+	color: white;
+	margin:0 auto;
+	z-index:1;
+	background-color:#FFFFFF;
+		-webkit-border-top-left-radius: 30px;
+-webkit-border-bottom-right-radius: 30px;
+-moz-border-radius-topleft: 30px;
+-moz-border-radius-bottomright: 30px;
+border-top-left-radius: 30px;
+border-bottom-right-radius: 30px;
+}
+.Audio{
+	background-image: url('../images/ribbon_background.png');
+}
+.camera{
+	background-image: url('../images/spend-pita-coklat.png');
+}
+.gaming{
+	background-image: url('../images/spend-pita-ijo.png');
+}
+.hdtv{
+	background-image: url('../images/spend-pita-marun.png');
+}
+.laptop{
+	background-image: url('../images/spend-pita-oren.png');
+}
+.smartphone{
+	background-image: url('../images/spend-pita-tosca.png');
+}
+.tabletpc{
+	background-image: url('../images/spend-pita-ungu.png');
+}
+
+.product_images {
+	width: 253px;
+	position: relative;
+	left: 55px;
+ 	top: 51px;
+	height: 241px;
+	text-align: center;
+	
+}
+
+.rating{
+	padding:10px
+}
+
+.counting{
+	position:absolute;
+	left: 849px;
+	top: 28px;
+	width: 42px;
+	height: 37px;
+	z-index:4;
+	text-align:center;
+	text-transform:capitalize;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:39px;
+	color:#FFFFFF;
+	
+}
+
+.product_title{
+position: absolute; width: 598px; height: 40px; z-index: 3; left: 315px; top: 42px;
+	
+}
+.product_name {
+	text-decoration:underline;
+	text-transform:uppercase;
+	font-size:large;
+	padding-left:10px;
+padding-bottom:8px;
+}
+
+.product_price{
+	padding-left:10px;
+	padding-top:5px;
+	font-size: small;
+	left:20px;
+}
+
+.detail_data{
+	position:relative;
+	left: 321px; 
+	top: -142px;
+	height: 173px;
+	width: 590px;
+}
+
+.product_comments{
+	position: relative;
+	 width: 290px;
+	  height: 100%;
+	   float:left;
+	   border-top:4px;
+	   border-top-color:#999999;
+	   border-bottom:4px;
+	   border-bottom-color:#999999;
+}
+
+table{
+	table-layout:fixed;
+	text-align: left;
+	vertical-align:top;
+	font-family:Helvetica, sans-serif;
+	font-size:small;
+	font-weight:bold;
+	color:black;
+
+}
+
+.comment{
+	width:200px;
+	
+}
+
+.spesification{
+	text-align: left;
+	font-size:small;
+	font-family:Helvetica, sans-serif;
+	color:#999999;
+
+	
+}
+
+span .price{
+	color:#333333;
+}
+
+label{
+	text-align: left;
+	font-family:Helvetica, sans-serif;
+	font-weight:bold;
+	color:#999999;
+
+}
+
+.coloum{
+	float:left; width:75px; font-weight:bold;
+	font-size:small;
+}
+
+
+
+.product_description{
+position: relative; 
+width: 290px; 
+height: 100%; 
+float:left;
+   border:thin;
+
+}
+
+hr {
+color: #999999;
+height: 0.1px;	
+	
+}
+.hseparator
+{
+position: relative;
+width: 10px; 
+height: 100%; 
+float:left;
+background-image: url('../images/separator.png');
+background-repeat:no-repeat;
+}
+
+
+.rating {
+	position: absolute; width: 245px; height: 41px; z-index: 2; left: 4px; top: 196px;
+}
+
+.images{
+	position: absolute; width: 253px; height: 192px; z-index: 1; left: 0px; top: 1px;
+		margin-top: 0px;
+}

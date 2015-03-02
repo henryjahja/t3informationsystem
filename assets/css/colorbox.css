@@ -1,0 +1,119 @@
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../assets/colorbox/overlay.png) repeat 0 0;}
+#colorbox{ 
+	background:#fff;
+	-webkit-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3); 
+	padding:0px;
+	}
+    #cboxTopLeft{width:0px; height:0; display:none;}
+    #cboxTopRight{width:0px; height:0; display:none;}
+    #cboxBottomLeft{width:0px; height:0; display:none;}
+    #cboxBottomRight{width:0px; height:0; display:none;}
+    #cboxMiddleLeft{width:0px; height:0; display:none;}
+    #cboxMiddleRight{width:0px; height:0; display:none;}
+    #cboxTopCenter{width:0px; height:0; display:none;}
+    #cboxBottomCenter{width:0px; height:0; display:none;}
+    
+	#cboxContent{
+			background:#f4f3f2; overflow:visible;
+			position:relative;
+			border:1px solid #fff;
+			}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:0; background:#fff; }
+        
+		#cboxTitle{
+			position:absolute; top:-30px; left:-1px;
+			font-family:'Oswald', sans-serif;
+			font-size:14px;
+			color:#000;
+			text-align:left;
+			text-transform:uppercase;
+			height:22px;
+			background:#ffc000;
+			padding:3px 10px;
+			}
+		
+        #cboxCurrent{
+			position:absolute; 
+			bottom:5px; left:100px; 
+			color:#949494;
+			padding:10px;
+			}
+		
+        #cboxSlideshow{
+			position:absolute; 
+			bottom:0px; 
+			right:0px; 
+			background:url(../assets/colorbox/controls.png) no-repeat -48px -145px;
+			width:47px;
+			height:47px;
+			text-indent:-9999px;
+			}
+		#cboxSlideshow.play{
+			background-position:0 -145px;
+			}
+		
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../assets/colorbox/controls.png) no-repeat 0 0; width:47px; height:47px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:0 -57px;}
+        #cboxNext{position:absolute; bottom:0; left:48px; background:url(../assets/colorbox/controls.png) no-repeat -48px 0; width:47px; height:47px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-48px -57px;}
+        
+		#cboxLoadingOverlay{background:url(../assets/colorbox/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../assets/colorbox/loading.gif) no-repeat center center;}
+        
+		#cboxClose{
+			position:absolute; top:-21px; right:-21px; 
+			background:url(../assets/colorbox/controls.png) no-repeat 0 -114px; width:21px; height:21px; text-indent:-9999px;
+			-webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+			-moz-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3); 
+		}
+        #cboxClose:hover{background-position:-31px -114px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE {
+	border:1px solid #a59381;
+	border-width:1px 1px 3px 1px;
+	}
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/*
+  The following provides PNG transparency support for IE6
+  Feel free to remove this and the /ie6/ directory if you have dropped IE6 support.
+*/
