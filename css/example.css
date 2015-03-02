@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 14px/1.5 "PT Sans", Helvetica, Arial, sans-serif;
+	background: #ffffff;
+}
+
+.wrapper {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	width: 960px;
+	height: auto;
+	margin-left: -480px;
+}
+
+.logo {
+	position:relative;
+	float:left;
+	width: 200px;
+	height: 200px;
+}
+
+.head {
+	position: relative;
+	float:left;
+	width: 760px;
+	height: 200px;
+}
+
+.example {
+	position: relative;
+	width: 960px;
+	height:auto;
+	min-height:30px;
+	height:auto !important;        /* for IE as it does not support min-height */
+	height:30px;                   /* for IE as it does not support min-height */
+	padding: 10px;
+	overflow: hidden;		
+	/*background: rgb(15, 15, 15) url(../images/bg.jpg) no-repeat center;
+	background-size:100% 35%;*/
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 10px rgb(10, 10, 10);
+	-webkit-box-shadow: 0 1px 10px rgb(10, 10, 10);
+	box-shadow: 0 1px 10px rgb(10, 10, 10);
+}
+.logstat{
+	position: fixed;
+	top:2%;
+	right:2%;
+	/*width:150px;
+	height:45px;*/
+	padding:10px;
+	background-color: rgba(240, 27, 27, .8);
+	color:#ffffff;
+	font: normal 14px/1 'Lucida Grande', Arial, sans-serif;
+	text-align:center;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 0 1px 10px rgb(10, 10, 10);
+	-webkit-box-shadow: 0 1px 10px rgb(10, 10, 10);
+	box-shadow: 0 1px 10px rgb(10, 10, 10);
+	z-index:1;
+}
+.spacing {
+	position:relative;
+	bottom:150px;
+	width: 960px;
+	height: 150px;
+	z-index:-1;
+}
+.fwrapper{
+    position:relative; background:grey;
+    height:200px;
+	}
+h1 {
+	margin-top: 45px;
+	color: rgba(255, 10, 10, .9);
+	font: normal 50px/1.5 'PT Sans Narrow', sans-serif;
+	line-height: 1;
+	/*font-size: 50px;*/
+	text-align: center;
+	/*font-weight: bold;*/
+	text-shadow: 0px 5px 8px rgb(125, 125, 125), 0px 5px 20px rgb(255, 255, 255);
+	cursor: default;
+}
+
+h1 sup {
+	display: inline-block;
+	color: rgba(10, 10, 10, .9);
+	font-size: .35em;
+	font-style: normal;
+	vertical-align: top;
+	margin-left: -.4em;
+	padding-top: .46em;
+}
+
+.footer {
+position: fixed;
+bottom: 5px;
+left: 0;
+right: 0;
+font-size: 11px;
+text-align: center;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+color: rgb(160, 160, 160);
+}
+
+footer a {
+	color: inherit;
+}
